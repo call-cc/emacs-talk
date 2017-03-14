@@ -1,0 +1,99 @@
+# -*- Mode: Org; Coding: utf-8; -*-
+#+TITLE: Emacs Talk
+#+AUTHOR: Peter Barabas
+#+EMAIL: z0d@notresp.com
+#+DATE: 2017.03.03.
+#+STARTUP: showall odd hidestars
+#+REVEAL_ROOT: file:///home/epebara/dev/emacs-talk/reveal.js
+#+OPTIONS: author:t email:t date:t toc:1
+#+OPTIONS: reveal_single_file:t
+#+OPTIONS: reveal_center:nil reveal_progress:t reveal_history:t reveal_control:nil
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1100 reveal_height:800
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: solarized
+#+REVEAL_HLEVEL: 999
+#+REVEAL_EXTRA_CSS: styles.css
+
+* History
+#+ATTR_REVEAL: :frag (appear)
+  - Created in 1976 as macros for TECO, Editor MACroS for PDP
+    - Line editors
+  - Written by David Moon, Guy L. Steele (Java guy), Richard Stallman (GNU guy)
+  - Editor wars
+  - Versions: GNU, EINE/ZWEI, Gosling, Multics, X, Aquamacs
+  - Timeline: https://www.jwz.org/doc/emacs-timeline.html
+* Trivia
+#+ATTR_REVEAL: :frag (appear)
+  - First commit message in 1986
+  - ~1.5 million LoC
+  - ~1.2 million lines Emacs Lisp
+  - ~332.000 lines of C
+  - 70% Emacs Lisp, 22% C
+  - no namespaces in Emacs Lisp!
+* Philosophy of Emacs
+#+ATTR_REVEAL: :frag (appear)
+  - Editor or operating system?
+  - all-in-one
+  - Lisp machines
+    - structured text
+    - massive documentation (8000+ pages)
+    - presentation of objects
+  - Keys: Alt, Meta, Ctrl, Hyper, Super
+  - self-documenting
+  - extensible
+    - 2000+ built-in commands
+    - unlimited number of libraries
+* First glance
+#+ATTR_REVEAL: :frag (appear)
+  - GUI vs console Emacs, not just a slight difference
+  - Frames, windows
+  - Lisp as extension language
+* Libraries
+#+ATTR_REVEAL: :frag (appear)
+  - Gnus, E/// mail, Gmail, news, IRC
+    - https://wiki.lmera.ericsson.se/wiki/ELX/HOWTOS/Gnus
+    - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/gnus-guide-en.org
+  - Browsers, xwidget
+  - Dired, ediff, terminal emulator, shell
+    - M-!, M-x shell, M-x eshell
+    - https://www.masteringemacs.org/article/complete-guide-mastering-eshell
+  - RSS reader, elfeed
+* Libraries (cont.)
+#+ATTR_REVEAL: :frag (appear)
+  - Helm
+    - [[https://www.youtube.com/watch?v=XjKtkEMUYGc][Spotify client in 16 minutes]]
+  - VCS integration, Magit
+  - Python: Elpy
+  - for vim users: evil
+  - TRAMP: remote files, sudo
+    - C-x C-f /sudo::/etc/hosts
+  - You name it
+* org-mode
+#+ATTR_REVEAL: :frag (appear)
+  - originally an outliner tool
+  - todo lists
+  - calendar integration
+  - spreadsheet
+    - table from CSV: C-c |
+    - Formula: #+TBLFM: $6 = $4 / $5
+    - Recalculate: C-u C-c *
+  - Babel: R
+  - web page/blog/paper authoring tool
+  - more information: http://orgmode.org/
+* Is it for you?
+#+ATTR_REVEAL: :frag (appear)
+  - a long learning experience
+  - DIY-style
+  - life-long init.el hacking :-)
+* First steps
+#+ATTR_REVEAL: :frag (appear)
+  - Emacs home page: https://www.gnu.org/software/emacs/
+  - Emacs book: https://www.masteringemacs.org/
+  - Emacs wiki: https://emacswiki.org/
+  - Emacs Starter kit: https://github.com/technomancy/emacs-starter-kit
+  - Emacs <3 vim: http://spacemacs.org/
+  - Sacha'c blog: http://sachachua.com/blog/category/emacs/
